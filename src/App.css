@@ -46,6 +46,11 @@
   border-radius: 1rem;
 }
 
+.my-card:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
 .my-time {
   font-size: 10pt;
   margin: 0;
