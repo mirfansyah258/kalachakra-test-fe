@@ -48,10 +48,31 @@
 
 .my-card:hover {
   background-color: #f7f7f7;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .my-time {
   font-size: 10pt;
   margin: 0;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none !important
+}
+
+.my-img-container {
+
+}
+
+@media (min-width: 768px) {
+  .my-img-container {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-img-container {
+      max-width: 50%;
+  }
 }

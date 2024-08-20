@@ -9,6 +9,7 @@ import { Button, Modal } from 'react-bootstrap';
 import TodoToast from './components/TodoToast';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './views/Home';
+import Detail from './views/Detail';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -98,6 +99,7 @@ function App() {
         </header>
         <Routes>
           <Route path='/' element={<Home addTodo={addTodo} todos={todos} editMdShow={editMdShow} deleteMdShow={deleteMdShow} />} />
+          <Route path='/detail/:id' element={<Detail />} />
         </Routes>
 
         <Modal show={deleteMd} onHide={deleteMdClose} centered>
